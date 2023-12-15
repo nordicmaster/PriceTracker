@@ -42,7 +42,7 @@ try:
             f0.write('\n')
     f0.write("total: " + str(int(sumall) // 60) + " : " + str(int(sumall) % 60))
     f0.write('\n')
-    print('GTHB test success')
+    print('GTHB test success!')
 finally:
     f0.close()
     driver.quit()
