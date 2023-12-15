@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}<h1>Results</h1>{% endblock %}
+{% block content %}
+    {% for o in items %}
+        <div class="compare_row">
+            {{ o }}
+        </div>
+    {% endfor %}
+{% endblock %}
+

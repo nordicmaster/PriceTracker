@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}<h1>Enter item name</h1>{% endblock %}
+{% block form %}
+    <form method="POST">
+        <input type="text" id="name" name="name" required>
+        {% csrf_token %}
+        <input type="submit" value="Send">
+    </form>
+{% endblock %}
+
